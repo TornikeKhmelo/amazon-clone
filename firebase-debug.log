@@ -1,0 +1,1774 @@
+[debug] [2022-04-11T12:51:39.617Z] ----------------------------------------------------------------------
+[debug] [2022-04-11T12:51:39.619Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Tornike\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-04-11T12:51:39.619Z] CLI Version:   10.6.0
+[debug] [2022-04-11T12:51:39.620Z] Platform:      win32
+[debug] [2022-04-11T12:51:39.620Z] Node Version:  v14.17.4
+[debug] [2022-04-11T12:51:39.621Z] Time:          Mon Apr 11 2022 16:51:39 GMT+0400 (Georgia Standard Time)
+[debug] [2022-04-11T12:51:39.621Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-11T12:51:39.625Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-04-11T12:51:39.722Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-11T12:51:39.722Z] > authorizing via signed-in user (tornikekhmelidzee@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2022-04-11T12:51:39.764Z] [hub] writing locator at C:\Users\Tornike\AppData\Local\Temp\hub-e-clone-1ab09.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[warn] !  Your requested "node" version "16" doesn't match your global version "14". Using node@14 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"16\" doesn't match your global version \"14\". Using node@14 from host."}}
+[debug] [2022-04-11T12:51:39.792Z] defaultcredentials: writing to file C:\Users\Tornike\AppData\Roaming\firebase\tornikekhmelidzee_gmail_com_application_default_credentials.json
+[debug] [2022-04-11T12:51:39.794Z] Setting GAC to C:\Users\Tornike\AppData\Roaming\firebase\tornikekhmelidzee_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Tornike\\AppData\\Roaming\\firebase\\tornikekhmelidzee_gmail_com_application_default_credentials.json"}}
+[debug] [2022-04-11T12:51:39.796Z] > refreshing access token with scopes: []
+[debug] [2022-04-11T12:51:39.798Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-11T12:51:40.090Z] <<< HTTP RESPONSE 200 {"date":"Mon, 11 Apr 2022 12:51:42 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-11T12:51:40.125Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/e-clone-1ab09/adminSdkConfig [none]
+[debug] [2022-04-11T12:51:40.374Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-04-11T12:51:40.375Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-04-11T12:51:40.592Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/e-clone-1ab09/adminSdkConfig 200
+[debug] [2022-04-11T12:51:40.593Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/e-clone-1ab09/adminSdkConfig {"projectId":"e-clone-1ab09","databaseURL":"https://e-clone-1ab09-default-rtdb.europe-west1.firebasedatabase.app","storageBucket":"e-clone-1ab09.appspot.com"}
+[debug] [2022-04-11T12:51:40.659Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/e-clone-1ab09/sites 
+[debug] [2022-04-11T12:51:42.010Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/e-clone-1ab09/sites 200
+[debug] [2022-04-11T12:51:42.012Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/e-clone-1ab09/sites {"sites":[{"name":"projects/302271305131/sites/e-clone-1ab09","defaultUrl":"https://e-clone-1ab09.web.app","appId":"1:302271305131:web:002858de5ec77dab9e2eee","type":"DEFAULT_SITE"}]}
+[debug] [2022-04-11T12:51:42.015Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/e-clone-1ab09/webApps/1:302271305131:web:002858de5ec77dab9e2eee/config [none]
+[debug] [2022-04-11T12:51:43.124Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/e-clone-1ab09/webApps/1:302271305131:web:002858de5ec77dab9e2eee/config 200
+[debug] [2022-04-11T12:51:43.125Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/e-clone-1ab09/webApps/1:302271305131:web:002858de5ec77dab9e2eee/config {"projectId":"e-clone-1ab09","appId":"1:302271305131:web:002858de5ec77dab9e2eee","databaseURL":"https://e-clone-1ab09-default-rtdb.europe-west1.firebasedatabase.app","storageBucket":"e-clone-1ab09.appspot.com","apiKey":"AIzaSyAhYb8r1aDDr8a6KhGTazmlOwGrLAlSsAQ","authDomain":"e-clone-1ab09.firebaseapp.com","messagingSenderId":"302271305131","measurementId":"G-F3J6C8BS3B"}
+[info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  ui: downloading ui-v1.6.5.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.6.5.zip..."}}
+[debug] [2022-04-11T12:51:43.273Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.6.5.zip 
+[debug] [2022-04-11T12:51:43.518Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.6.5.zip 200
+[debug] [2022-04-11T12:51:43.519Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.6.5.zip [stream]
+[debug] [2022-04-11T12:51:45.065Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-04-11T12:51:45.065Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-04-11T12:51:45.065Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\Tornike\\.cache\\firebase\\emulators\\ui-v1.6.5\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\Tornike\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.6.5\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-04-11T12:51:45.237Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "C:\Users\Tornike\Desktop\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2022-04-11T12:51:45.355Z] Validating nodejs source
+[debug] [2022-04-11T12:51:49.888Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:51:49.888Z] Building nodejs source
+[debug] [2022-04-11T12:51:49.889Z] Analyzing nodejs backend spec
+[info] +  functions[us-central1-api]: http function initialized (http://localhost:5001/e-clone-1ab09/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/e-clone-1ab09/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ localhost:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-04-11T12:53:37.814Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-11T12:53:37.816Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-11T12:53:37.817Z] Accepted request GET /e-clone-1ab09/us-central1/api --> us-central1-api
+[debug] [2022-04-11T12:53:37.836Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-04-11T12:53:37.837Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-04-11T12:53:37.837Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-04-11T12:53:37.838Z] [worker-us-central1-api-28977f5f-e3f2-44ac-b730-c9f214be331e]: Assigning socketPath: \\?\pipe\C:\Users\Tornike\Desktop\amazon-clone\functions\20716 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-28977f5f-e3f2-44ac-b730-c9f214be331e]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\20716"}}
+[debug] [2022-04-11T12:53:37.839Z] [worker-us-central1-api-28977f5f-e3f2-44ac-b730-c9f214be331e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-28977f5f-e3f2-44ac-b730-c9f214be331e]: BUSY"}}
+[debug] [2022-04-11T12:53:40.696Z] [runtime-status] [20716] Functions runtime initialized. {"cwd":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions","node_version":"14.17.4"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20716] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\",\"node_version\":\"14.17.4\"}"}}
+[debug] [2022-04-11T12:53:40.703Z] [runtime-status] [20716] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20716] Disabled runtime features: undefined"}}
+[debug] [2022-04-11T12:53:40.706Z] [runtime-status] [20716] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20716] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-11T12:53:40.707Z] [runtime-status] [20716] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20716] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-11T12:53:40.708Z] [runtime-status] [20716] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20716] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-04-11T12:53:40.709Z] [runtime-status] [20716] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20716] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-11T12:53:40.823Z] [runtime-status] [20716] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20716] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-04-11T12:53:40.824Z] [runtime-status] [20716] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20716] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-11T12:53:40.825Z] [runtime-status] [20716] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20716] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-11T12:53:40.826Z] [runtime-status] [20716] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20716] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-11T12:53:40.827Z] [runtime-status] [20716] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20716] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-11T12:53:40.827Z] [runtime-status] [20716] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.0.2","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20716] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-11T12:53:41.075Z] [runtime-status] [20716] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20716] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-04-11T12:53:41.076Z] [runtime-status] [20716] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20716] Running api in signature http"}}
+[debug] [2022-04-11T12:53:41.082Z] [runtime-status] [20716] Attempting to listen to socketPath: \\?\pipe\C:\Users\Tornike\Desktop\amazon-clone\functions\20716 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20716] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\20716"}}
+[debug] [2022-04-11T12:53:41.087Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-11T12:53:41.089Z] [functions] Got req.url=/e-clone-1ab09/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/e-clone-1ab09/us-central1/api, mapping to path=/"}}
+[debug] [2022-04-11T12:53:41.109Z] [runtime-status] [20716] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20716] Ephemeral server handling GET request"}}
+[debug] [2022-04-11T12:53:41.120Z] [runtime-status] [20716] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [20716] Ephemeral server survived."}}
+[info] >  ReferenceError: res is not defined {"user":"ReferenceError: res is not defined","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m ReferenceError: res is not defined"}}
+[info] >      at C:\Users\Tornike\Desktop\amazon-clone\functions\index.js:17:53 {"user":"    at C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js:17:53","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js:17:53"}}
+[info] >      at Layer.handle [as handle_request] (C:\Users\Tornike\Desktop\amazon-clone\functions\node_modules\express\lib\router\layer.js:95:5) {"user":"    at Layer.handle [as handle_request] (C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\express\\lib\\router\\layer.js:95:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Layer.handle [as handle_request] (C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\express\\lib\\router\\layer.js:95:5)"}}
+[info] >      at next (C:\Users\Tornike\Desktop\amazon-clone\functions\node_modules\express\lib\router\route.js:137:13) {"user":"    at next (C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\express\\lib\\router\\route.js:137:13)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at next (C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\express\\lib\\router\\route.js:137:13)"}}
+[info] >      at Route.dispatch (C:\Users\Tornike\Desktop\amazon-clone\functions\node_modules\express\lib\router\route.js:112:3) {"user":"    at Route.dispatch (C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\express\\lib\\router\\route.js:112:3)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Route.dispatch (C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\express\\lib\\router\\route.js:112:3)"}}
+[info] >      at Layer.handle [as handle_request] (C:\Users\Tornike\Desktop\amazon-clone\functions\node_modules\express\lib\router\layer.js:95:5) {"user":"    at Layer.handle [as handle_request] (C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\express\\lib\\router\\layer.js:95:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Layer.handle [as handle_request] (C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\express\\lib\\router\\layer.js:95:5)"}}
+[info] >      at C:\Users\Tornike\Desktop\amazon-clone\functions\node_modules\express\lib\router\index.js:281:22 {"user":"    at C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\express\\lib\\router\\index.js:281:22","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\express\\lib\\router\\index.js:281:22"}}
+[info] >      at Function.process_params (C:\Users\Tornike\Desktop\amazon-clone\functions\node_modules\express\lib\router\index.js:341:12) {"user":"    at Function.process_params (C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\express\\lib\\router\\index.js:341:12)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Function.process_params (C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\express\\lib\\router\\index.js:341:12)"}}
+[info] >      at next (C:\Users\Tornike\Desktop\amazon-clone\functions\node_modules\express\lib\router\index.js:275:10) {"user":"    at next (C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\express\\lib\\router\\index.js:275:10)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at next (C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\express\\lib\\router\\index.js:275:10)"}}
+[info] >      at jsonParser (C:\Users\Tornike\Desktop\amazon-clone\functions\node_modules\body-parser\lib\types\json.js:110:7) {"user":"    at jsonParser (C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\body-parser\\lib\\types\\json.js:110:7)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at jsonParser (C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\body-parser\\lib\\types\\json.js:110:7)"}}
+[info] >      at Layer.handle [as handle_request] (C:\Users\Tornike\Desktop\amazon-clone\functions\node_modules\express\lib\router\layer.js:95:5) {"user":"    at Layer.handle [as handle_request] (C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\express\\lib\\router\\layer.js:95:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Layer.handle [as handle_request] (C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\express\\lib\\router\\layer.js:95:5)"}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-04-11T12:53:41.157Z] [worker-us-central1-api-28977f5f-e3f2-44ac-b730-c9f214be331e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-28977f5f-e3f2-44ac-b730-c9f214be331e]: IDLE"}}
+[debug] [2022-04-11T12:53:41.158Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-11T12:54:20.732Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:54:21.743Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2022-04-11T12:54:21.744Z] [worker-us-central1-api-28977f5f-e3f2-44ac-b730-c9f214be331e]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-28977f5f-e3f2-44ac-b730-c9f214be331e]: FINISHING"}}
+[debug] [2022-04-11T12:54:21.748Z] Validating nodejs source
+[debug] [2022-04-11T12:54:26.962Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:54:26.963Z] Building nodejs source
+[debug] [2022-04-11T12:54:26.963Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:54:26.970Z] [worker-us-central1-api-28977f5f-e3f2-44ac-b730-c9f214be331e]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-28977f5f-e3f2-44ac-b730-c9f214be331e]: exited"}}
+[debug] [2022-04-11T12:54:26.971Z] [worker-us-central1-api-28977f5f-e3f2-44ac-b730-c9f214be331e]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-28977f5f-e3f2-44ac-b730-c9f214be331e]: FINISHED"}}
+[debug] [2022-04-11T12:54:26.975Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-11T12:54:26.975Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-11T12:54:26.976Z] Accepted request GET /e-clone-1ab09/us-central1/api --> us-central1-api
+[debug] [2022-04-11T12:54:26.976Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[debug] [2022-04-11T12:54:26.986Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-04-11T12:54:26.986Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-04-11T12:54:26.986Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-04-11T12:54:26.987Z] [worker-us-central1-api-96610bed-9635-47cf-9b46-0939fcac186e]: Assigning socketPath: \\?\pipe\C:\Users\Tornike\Desktop\amazon-clone\functions\15648 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-96610bed-9635-47cf-9b46-0939fcac186e]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\15648"}}
+[debug] [2022-04-11T12:54:26.987Z] [worker-us-central1-api-96610bed-9635-47cf-9b46-0939fcac186e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-96610bed-9635-47cf-9b46-0939fcac186e]: BUSY"}}
+[debug] [2022-04-11T12:54:26.989Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:54:28.002Z] [worker-pool] Marking BUSY worker to finish (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Marking BUSY worker to finish (us-central1-api)"}}
+[debug] [2022-04-11T12:54:28.002Z] [worker-us-central1-api-96610bed-9635-47cf-9b46-0939fcac186e]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-96610bed-9635-47cf-9b46-0939fcac186e]: FINISHING"}}
+[debug] [2022-04-11T12:54:28.003Z] Validating nodejs source
+[debug] [2022-04-11T12:54:33.399Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:54:33.399Z] Building nodejs source
+[debug] [2022-04-11T12:54:33.399Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:54:33.404Z] [runtime-status] [15648] Functions runtime initialized. {"cwd":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions","node_version":"14.17.4"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15648] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\",\"node_version\":\"14.17.4\"}"}}
+[debug] [2022-04-11T12:54:33.405Z] [runtime-status] [15648] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15648] Disabled runtime features: undefined"}}
+[debug] [2022-04-11T12:54:33.405Z] [runtime-status] [15648] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15648] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-11T12:54:33.406Z] [runtime-status] [15648] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15648] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-11T12:54:33.406Z] [runtime-status] [15648] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15648] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-04-11T12:54:33.406Z] [runtime-status] [15648] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15648] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-11T12:54:33.407Z] [runtime-status] [15648] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15648] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-04-11T12:54:33.407Z] [runtime-status] [15648] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15648] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-11T12:54:33.407Z] [runtime-status] [15648] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15648] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-11T12:54:33.408Z] [runtime-status] [15648] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15648] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-11T12:54:33.408Z] [runtime-status] [15648] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15648] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-11T12:54:33.408Z] [runtime-status] [15648] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.0.2","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15648] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-11T12:54:33.409Z] [runtime-status] [15648] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15648] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-04-11T12:54:33.412Z] [runtime-status] [15648] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15648] Running api in signature http"}}
+[debug] [2022-04-11T12:54:33.412Z] [runtime-status] [15648] Attempting to listen to socketPath: \\?\pipe\C:\Users\Tornike\Desktop\amazon-clone\functions\15648 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15648] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\15648"}}
+[debug] [2022-04-11T12:54:33.413Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-11T12:54:33.414Z] [functions] Got req.url=/e-clone-1ab09/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/e-clone-1ab09/us-central1/api, mapping to path=/"}}
+[debug] [2022-04-11T12:54:33.424Z] [runtime-status] [15648] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15648] Ephemeral server handling GET request"}}
+[debug] [2022-04-11T12:54:33.448Z] [runtime-status] [15648] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [15648] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~3s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~3s"}}
+[debug] [2022-04-11T12:54:33.453Z] [worker-us-central1-api-96610bed-9635-47cf-9b46-0939fcac186e]: IDLE --> FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-96610bed-9635-47cf-9b46-0939fcac186e]: IDLE --> FINISHING"}}
+[debug] [2022-04-11T12:54:33.527Z] [worker-us-central1-api-96610bed-9635-47cf-9b46-0939fcac186e]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-96610bed-9635-47cf-9b46-0939fcac186e]: exited"}}
+[debug] [2022-04-11T12:54:33.527Z] [worker-us-central1-api-96610bed-9635-47cf-9b46-0939fcac186e]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-96610bed-9635-47cf-9b46-0939fcac186e]: FINISHED"}}
+[debug] [2022-04-11T12:54:33.528Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-11T12:54:36.629Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-11T12:54:36.630Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-11T12:54:36.630Z] Accepted request GET /e-clone-1ab09/us-central1/api --> us-central1-api
+[debug] [2022-04-11T12:54:36.630Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[debug] [2022-04-11T12:54:36.637Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-04-11T12:54:36.638Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-04-11T12:54:36.638Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-04-11T12:54:36.639Z] [worker-us-central1-api-d7f0d80f-1ffe-4c6b-811c-bd59bddec5a7]: Assigning socketPath: \\?\pipe\C:\Users\Tornike\Desktop\amazon-clone\functions\5088 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-d7f0d80f-1ffe-4c6b-811c-bd59bddec5a7]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\5088"}}
+[debug] [2022-04-11T12:54:36.640Z] [worker-us-central1-api-d7f0d80f-1ffe-4c6b-811c-bd59bddec5a7]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-d7f0d80f-1ffe-4c6b-811c-bd59bddec5a7]: BUSY"}}
+[debug] [2022-04-11T12:54:39.015Z] [runtime-status] [5088] Functions runtime initialized. {"cwd":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions","node_version":"14.17.4"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5088] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\",\"node_version\":\"14.17.4\"}"}}
+[debug] [2022-04-11T12:54:39.016Z] [runtime-status] [5088] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5088] Disabled runtime features: undefined"}}
+[debug] [2022-04-11T12:54:39.019Z] [runtime-status] [5088] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5088] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-11T12:54:39.025Z] [runtime-status] [5088] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5088] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-11T12:54:39.025Z] [runtime-status] [5088] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5088] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-04-11T12:54:39.026Z] [runtime-status] [5088] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5088] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-11T12:54:39.161Z] [runtime-status] [5088] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5088] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-04-11T12:54:39.161Z] [runtime-status] [5088] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5088] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-11T12:54:39.162Z] [runtime-status] [5088] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5088] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-11T12:54:39.163Z] [runtime-status] [5088] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5088] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-11T12:54:39.164Z] [runtime-status] [5088] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5088] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-11T12:54:39.164Z] [runtime-status] [5088] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.0.2","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5088] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-11T12:54:39.465Z] [runtime-status] [5088] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5088] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-04-11T12:54:39.466Z] [runtime-status] [5088] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5088] Running api in signature http"}}
+[debug] [2022-04-11T12:54:39.478Z] [runtime-status] [5088] Attempting to listen to socketPath: \\?\pipe\C:\Users\Tornike\Desktop\amazon-clone\functions\5088 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5088] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\5088"}}
+[debug] [2022-04-11T12:54:39.486Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-11T12:54:39.486Z] [functions] Got req.url=/e-clone-1ab09/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/e-clone-1ab09/us-central1/api, mapping to path=/"}}
+[debug] [2022-04-11T12:54:39.507Z] [runtime-status] [5088] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5088] Ephemeral server handling GET request"}}
+[debug] [2022-04-11T12:54:39.514Z] [runtime-status] [5088] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [5088] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-04-11T12:54:39.518Z] [worker-us-central1-api-d7f0d80f-1ffe-4c6b-811c-bd59bddec5a7]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-d7f0d80f-1ffe-4c6b-811c-bd59bddec5a7]: IDLE"}}
+[debug] [2022-04-11T12:54:39.520Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-11T12:54:39.777Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2022-04-11T12:55:59.562Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:56:00.566Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2022-04-11T12:56:00.567Z] [worker-us-central1-api-d7f0d80f-1ffe-4c6b-811c-bd59bddec5a7]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-d7f0d80f-1ffe-4c6b-811c-bd59bddec5a7]: FINISHING"}}
+[debug] [2022-04-11T12:56:00.582Z] Validating nodejs source
+[debug] [2022-04-11T12:56:05.349Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:56:05.349Z] Building nodejs source
+[debug] [2022-04-11T12:56:05.349Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:56:05.353Z] [worker-us-central1-api-d7f0d80f-1ffe-4c6b-811c-bd59bddec5a7]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-d7f0d80f-1ffe-4c6b-811c-bd59bddec5a7]: exited"}}
+[debug] [2022-04-11T12:56:05.354Z] [worker-us-central1-api-d7f0d80f-1ffe-4c6b-811c-bd59bddec5a7]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-d7f0d80f-1ffe-4c6b-811c-bd59bddec5a7]: FINISHED"}}
+[debug] [2022-04-11T12:56:05.356Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:56:06.369Z] Validating nodejs source
+[debug] [2022-04-11T12:56:10.843Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:56:10.844Z] Building nodejs source
+[debug] [2022-04-11T12:56:10.844Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:56:10.850Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:56:11.870Z] Validating nodejs source
+[debug] [2022-04-11T12:56:15.972Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:56:15.972Z] Building nodejs source
+[debug] [2022-04-11T12:56:15.972Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:56:26.278Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:56:27.303Z] Validating nodejs source
+[debug] [2022-04-11T12:56:32.667Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:56:32.667Z] Building nodejs source
+[debug] [2022-04-11T12:56:32.667Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:56:32.673Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:56:33.687Z] Validating nodejs source
+[debug] [2022-04-11T12:56:38.355Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:56:38.355Z] Building nodejs source
+[debug] [2022-04-11T12:56:38.355Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:56:38.365Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:56:39.375Z] Validating nodejs source
+[debug] [2022-04-11T12:56:43.729Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:56:43.730Z] Building nodejs source
+[debug] [2022-04-11T12:56:43.730Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:56:46.966Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:56:47.983Z] Validating nodejs source
+[debug] [2022-04-11T12:56:53.253Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:56:53.253Z] Building nodejs source
+[debug] [2022-04-11T12:56:53.253Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:56:53.269Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:56:54.284Z] Validating nodejs source
+[debug] [2022-04-11T12:56:58.492Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:56:58.492Z] Building nodejs source
+[debug] [2022-04-11T12:56:58.492Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:57:04.092Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:57:05.120Z] Validating nodejs source
+[debug] [2022-04-11T12:57:09.554Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:57:09.555Z] Building nodejs source
+[debug] [2022-04-11T12:57:09.555Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:57:09.560Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:57:10.577Z] Validating nodejs source
+[debug] [2022-04-11T12:57:15.604Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:57:15.605Z] Building nodejs source
+[debug] [2022-04-11T12:57:15.605Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:57:15.611Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:57:16.238Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:57:17.258Z] Validating nodejs source
+[debug] [2022-04-11T12:57:20.943Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:57:20.943Z] Building nodejs source
+[debug] [2022-04-11T12:57:20.943Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:57:23.556Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:57:24.571Z] Validating nodejs source
+[debug] [2022-04-11T12:57:29.025Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:57:29.025Z] Building nodejs source
+[debug] [2022-04-11T12:57:29.026Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:58:13.191Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:58:14.208Z] Validating nodejs source
+[debug] [2022-04-11T12:58:19.967Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:58:19.968Z] Building nodejs source
+[debug] [2022-04-11T12:58:19.968Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:58:20.068Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:58:21.082Z] Validating nodejs source
+[debug] [2022-04-11T12:58:26.049Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:58:26.050Z] Building nodejs source
+[debug] [2022-04-11T12:58:26.050Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:58:30.454Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:58:31.462Z] Validating nodejs source
+[debug] [2022-04-11T12:58:36.563Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:58:36.563Z] Building nodejs source
+[debug] [2022-04-11T12:58:36.564Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:58:48.837Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:58:49.852Z] Validating nodejs source
+[debug] [2022-04-11T12:58:53.585Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:58:53.586Z] Building nodejs source
+[debug] [2022-04-11T12:58:53.586Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:58:53.591Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:58:54.606Z] Validating nodejs source
+[debug] [2022-04-11T12:58:58.062Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:58:58.062Z] Building nodejs source
+[debug] [2022-04-11T12:58:58.062Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:59:05.975Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:59:07.012Z] Validating nodejs source
+[debug] [2022-04-11T12:59:11.549Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:59:11.550Z] Building nodejs source
+[debug] [2022-04-11T12:59:11.550Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:59:11.567Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:59:12.574Z] Validating nodejs source
+[debug] [2022-04-11T12:59:17.191Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:59:17.191Z] Building nodejs source
+[debug] [2022-04-11T12:59:17.192Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:59:17.198Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:59:18.219Z] Validating nodejs source
+[debug] [2022-04-11T12:59:22.133Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:59:22.133Z] Building nodejs source
+[debug] [2022-04-11T12:59:22.133Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:59:22.142Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:59:23.144Z] Validating nodejs source
+[debug] [2022-04-11T12:59:27.280Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:59:27.280Z] Building nodejs source
+[debug] [2022-04-11T12:59:27.280Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:59:27.289Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:59:27.513Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:59:28.541Z] Validating nodejs source
+[debug] [2022-04-11T12:59:32.539Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:59:32.539Z] Building nodejs source
+[debug] [2022-04-11T12:59:32.539Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:59:32.545Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:59:33.559Z] Validating nodejs source
+[debug] [2022-04-11T12:59:37.859Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:59:37.859Z] Building nodejs source
+[debug] [2022-04-11T12:59:37.860Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T12:59:37.865Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T12:59:38.885Z] Validating nodejs source
+[debug] [2022-04-11T12:59:43.637Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T12:59:43.637Z] Building nodejs source
+[debug] [2022-04-11T12:59:43.637Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T13:00:04.358Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T13:00:05.371Z] Validating nodejs source
+[debug] [2022-04-11T13:00:09.065Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T13:00:09.065Z] Building nodejs source
+[debug] [2022-04-11T13:00:09.066Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T13:00:18.873Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T13:00:19.886Z] Validating nodejs source
+[debug] [2022-04-11T13:00:23.916Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T13:00:23.916Z] Building nodejs source
+[debug] [2022-04-11T13:00:23.916Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T13:00:23.923Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T13:00:24.511Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T13:00:25.524Z] Validating nodejs source
+[debug] [2022-04-11T13:00:30.399Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T13:00:30.399Z] Building nodejs source
+[debug] [2022-04-11T13:00:30.399Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T13:00:30.405Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T13:00:31.413Z] Validating nodejs source
+[debug] [2022-04-11T13:00:36.497Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T13:00:36.497Z] Building nodejs source
+[debug] [2022-04-11T13:00:36.498Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T13:00:39.700Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T13:00:40.714Z] Validating nodejs source
+[debug] [2022-04-11T13:00:45.053Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T13:00:45.053Z] Building nodejs source
+[debug] [2022-04-11T13:00:45.053Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T13:00:45.061Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T13:00:45.872Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T13:00:46.887Z] Validating nodejs source
+[debug] [2022-04-11T13:00:50.816Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T13:00:50.816Z] Building nodejs source
+[debug] [2022-04-11T13:00:50.816Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T13:00:51.624Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T13:00:52.640Z] Validating nodejs source
+[debug] [2022-04-11T13:00:57.090Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T13:00:57.091Z] Building nodejs source
+[debug] [2022-04-11T13:00:57.091Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T13:00:57.099Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T13:00:58.116Z] Validating nodejs source
+[debug] [2022-04-11T13:01:02.542Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T13:01:02.542Z] Building nodejs source
+[debug] [2022-04-11T13:01:02.542Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T13:01:02.554Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T13:01:03.567Z] Validating nodejs source
+[debug] [2022-04-11T13:01:07.028Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T13:01:07.028Z] Building nodejs source
+[debug] [2022-04-11T13:01:07.028Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T13:01:07.033Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T13:01:08.043Z] Validating nodejs source
+[debug] [2022-04-11T13:01:12.798Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T13:01:12.799Z] Building nodejs source
+[debug] [2022-04-11T13:01:12.799Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T13:01:12.808Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T13:01:13.826Z] Validating nodejs source
+[debug] [2022-04-11T13:01:17.601Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T13:01:17.602Z] Building nodejs source
+[debug] [2022-04-11T13:01:17.602Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T13:01:50.663Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T13:01:51.669Z] Validating nodejs source
+[debug] [2022-04-11T13:01:55.716Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T13:01:55.716Z] Building nodejs source
+[debug] [2022-04-11T13:01:55.716Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T13:01:55.723Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T13:01:56.726Z] Validating nodejs source
+[debug] [2022-04-11T13:02:00.794Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T13:02:00.794Z] Building nodejs source
+[debug] [2022-04-11T13:02:00.794Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T13:02:07.735Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T13:02:08.753Z] Validating nodejs source
+[debug] [2022-04-11T13:02:13.258Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T13:02:13.258Z] Building nodejs source
+[debug] [2022-04-11T13:02:13.258Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T13:02:13.265Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T13:02:14.283Z] Validating nodejs source
+[debug] [2022-04-11T13:02:19.219Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T13:02:19.220Z] Building nodejs source
+[debug] [2022-04-11T13:02:19.220Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T13:02:19.226Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T13:02:20.218Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T13:02:21.287Z] Validating nodejs source
+[debug] [2022-04-11T13:02:27.238Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T13:02:27.238Z] Building nodejs source
+[debug] [2022-04-11T13:02:27.238Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T13:02:27.243Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T13:02:27.992Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T13:02:29.010Z] Validating nodejs source
+[debug] [2022-04-11T13:02:33.585Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T13:02:33.585Z] Building nodejs source
+[debug] [2022-04-11T13:02:33.585Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T13:02:37.204Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T13:02:38.219Z] Validating nodejs source
+[debug] [2022-04-11T13:02:42.365Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T13:02:42.365Z] Building nodejs source
+[debug] [2022-04-11T13:02:42.365Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T13:02:42.371Z] File C:\Users\Tornike\Desktop\amazon-clone\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\index.js changed, reloading triggers"}}
+[debug] [2022-04-11T13:02:43.381Z] Validating nodejs source
+[debug] [2022-04-11T13:02:47.142Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-11T13:02:47.142Z] Building nodejs source
+[debug] [2022-04-11T13:02:47.142Z] Analyzing nodejs backend spec
+[debug] [2022-04-11T13:14:33.413Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2022-04-11T13:53:11.338Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-11T13:53:11.338Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-11T13:53:11.339Z] Accepted request POST /e-clone-1ab09/us-central1/api/paymants/reate?total=0 --> us-central1-api
+[debug] [2022-04-11T13:53:11.339Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[debug] [2022-04-11T13:53:11.345Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-04-11T13:53:11.345Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-04-11T13:53:11.346Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-04-11T13:53:11.346Z] [worker-us-central1-api-df7e26fa-4088-490d-81c9-c93d66781fc8]: Assigning socketPath: \\?\pipe\C:\Users\Tornike\Desktop\amazon-clone\functions\21328 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-df7e26fa-4088-490d-81c9-c93d66781fc8]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\21328"}}
+[debug] [2022-04-11T13:53:11.346Z] [worker-us-central1-api-df7e26fa-4088-490d-81c9-c93d66781fc8]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-df7e26fa-4088-490d-81c9-c93d66781fc8]: BUSY"}}
+[debug] [2022-04-11T13:53:14.160Z] [runtime-status] [21328] Functions runtime initialized. {"cwd":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions","node_version":"14.17.4"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\",\"node_version\":\"14.17.4\"}"}}
+[debug] [2022-04-11T13:53:14.161Z] [runtime-status] [21328] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Disabled runtime features: undefined"}}
+[debug] [2022-04-11T13:53:14.172Z] [runtime-status] [21328] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-11T13:53:14.176Z] [runtime-status] [21328] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-11T13:53:14.176Z] [runtime-status] [21328] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-04-11T13:53:14.178Z] [runtime-status] [21328] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-11T13:53:14.359Z] [runtime-status] [21328] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-04-11T13:53:14.360Z] [runtime-status] [21328] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-11T13:53:14.360Z] [runtime-status] [21328] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-11T13:53:14.362Z] [runtime-status] [21328] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-11T13:53:14.363Z] [runtime-status] [21328] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.20.0\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\index.js\"}"}}
+[debug] [2022-04-11T13:53:14.364Z] [runtime-status] [21328] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.0.2","resolution":"C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.0.2\",\"resolution\":\"C:\\\\Users\\\\Tornike\\\\Desktop\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2022-04-11T13:53:14.691Z] [runtime-status] [21328] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-04-11T13:53:14.694Z] [runtime-status] [21328] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Running api in signature http"}}
+[debug] [2022-04-11T13:53:14.696Z] [runtime-status] [21328] Attempting to listen to socketPath: \\?\pipe\C:\Users\Tornike\Desktop\amazon-clone\functions\21328 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\21328"}}
+[debug] [2022-04-11T13:53:14.700Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-11T13:53:14.703Z] [functions] Got req.url=/e-clone-1ab09/us-central1/api/paymants/reate?total=0, mapping to path=/paymants/reate?total=0 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/e-clone-1ab09/us-central1/api/paymants/reate?total=0, mapping to path=/paymants/reate?total=0"}}
+[debug] [2022-04-11T13:53:14.719Z] [runtime-status] [21328] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Ephemeral server handling POST request"}}
+[debug] [2022-04-11T13:53:14.725Z] [runtime-status] [21328] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-04-11T13:53:14.730Z] [worker-us-central1-api-df7e26fa-4088-490d-81c9-c93d66781fc8]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-df7e26fa-4088-490d-81c9-c93d66781fc8]: IDLE"}}
+[debug] [2022-04-11T13:53:14.730Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-11T13:54:10.769Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-11T13:54:10.770Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-11T13:54:10.770Z] Accepted request POST /e-clone-1ab09/us-central1/api/paymants/reate?total=3588.0000000000005 --> us-central1-api
+[debug] [2022-04-11T13:54:10.770Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-04-11T13:54:10.770Z] [worker-us-central1-api-df7e26fa-4088-490d-81c9-c93d66781fc8]: Assigning socketPath: \\?\pipe\C:\Users\Tornike\Desktop\amazon-clone\functions\21328 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-df7e26fa-4088-490d-81c9-c93d66781fc8]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\21328"}}
+[debug] [2022-04-11T13:54:10.770Z] [worker-us-central1-api-df7e26fa-4088-490d-81c9-c93d66781fc8]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-df7e26fa-4088-490d-81c9-c93d66781fc8]: BUSY"}}
+[debug] [2022-04-11T13:54:10.772Z] [runtime-status] [21328] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-04-11T13:54:10.774Z] [runtime-status] [21328] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Running api in signature http"}}
+[debug] [2022-04-11T13:54:10.774Z] [runtime-status] [21328] Attempting to listen to socketPath: \\?\pipe\C:\Users\Tornike\Desktop\amazon-clone\functions\21328 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\21328"}}
+[debug] [2022-04-11T13:54:10.775Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-11T13:54:10.775Z] [functions] Got req.url=/e-clone-1ab09/us-central1/api/paymants/reate?total=3588.0000000000005, mapping to path=/paymants/reate?total=3588.0000000000005 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/e-clone-1ab09/us-central1/api/paymants/reate?total=3588.0000000000005, mapping to path=/paymants/reate?total=3588.0000000000005"}}
+[debug] [2022-04-11T13:54:10.779Z] [runtime-status] [21328] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Ephemeral server handling POST request"}}
+[debug] [2022-04-11T13:54:10.781Z] [runtime-status] [21328] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-04-11T13:54:10.785Z] [worker-us-central1-api-df7e26fa-4088-490d-81c9-c93d66781fc8]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-df7e26fa-4088-490d-81c9-c93d66781fc8]: IDLE"}}
+[debug] [2022-04-11T13:54:10.785Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-11T13:56:00.442Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-04-11T13:56:00.442Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-04-11T13:56:00.442Z] Accepted request POST /e-clone-1ab09/us-central1/api/paymants/reate?total=2392 --> us-central1-api
+[debug] [2022-04-11T13:56:00.442Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-04-11T13:56:00.442Z] [worker-us-central1-api-df7e26fa-4088-490d-81c9-c93d66781fc8]: Assigning socketPath: \\?\pipe\C:\Users\Tornike\Desktop\amazon-clone\functions\21328 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-df7e26fa-4088-490d-81c9-c93d66781fc8]: Assigning socketPath: \\\\?\\pipe\\C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\21328"}}
+[debug] [2022-04-11T13:56:00.442Z] [worker-us-central1-api-df7e26fa-4088-490d-81c9-c93d66781fc8]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-df7e26fa-4088-490d-81c9-c93d66781fc8]: BUSY"}}
+[debug] [2022-04-11T13:56:00.443Z] [runtime-status] [21328] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-04-11T13:56:00.444Z] [runtime-status] [21328] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Running api in signature http"}}
+[debug] [2022-04-11T13:56:00.445Z] [runtime-status] [21328] Attempting to listen to socketPath: \\?\pipe\C:\Users\Tornike\Desktop\amazon-clone\functions\21328 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Attempting to listen to socketPath: \\\\?\\pipe\\C:\\Users\\Tornike\\Desktop\\amazon-clone\\functions\\21328"}}
+[debug] [2022-04-11T13:56:00.446Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-04-11T13:56:00.446Z] [functions] Got req.url=/e-clone-1ab09/us-central1/api/paymants/reate?total=2392, mapping to path=/paymants/reate?total=2392 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/e-clone-1ab09/us-central1/api/paymants/reate?total=2392, mapping to path=/paymants/reate?total=2392"}}
+[debug] [2022-04-11T13:56:00.449Z] [runtime-status] [21328] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Ephemeral server handling POST request"}}
+[debug] [2022-04-11T13:56:00.450Z] [runtime-status] [21328] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [21328] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-04-11T13:56:00.452Z] [worker-us-central1-api-df7e26fa-4088-490d-81c9-c93d66781fc8]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-df7e26fa-4088-490d-81c9-c93d66781fc8]: IDLE"}}
+[debug] [2022-04-11T13:56:00.452Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-04-11T14:21:47.650Z] Functions emulator received unknown request at path /favicon.ico
